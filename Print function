@@ -1,0 +1,6 @@
+n= int(input())
+def build_string(i,n):
+    if i>n:
+        return ''
+    return str(i)+build_string(i+1,n)
+print(build_string(1,n))
