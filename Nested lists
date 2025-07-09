@@ -1,0 +1,15 @@
+arr=[]
+scores=[]
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        arr.append([name,score])
+        scores.append(score)
+arr.sort()
+b=list(set(scores))
+b.sort()
+i= b[1]
+for items in arr:
+    if items[1]==i:
+        print(items[0])
