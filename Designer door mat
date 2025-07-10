@@ -1,0 +1,12 @@
+a= input().split()
+N=int(a[0])
+M= int(a[1])
+a=int((N-1)/2)
+b=int((M-7)/2)
+for i in range(a):
+    s=i+1
+    print('-'*(3*a-i*3)+'.|.'*(s+i)+'-'*(3*a-i*3))
+print('-'*b+'WELCOME'+'-'*b)
+for i in range(a):
+    s=N-2-2*i
+    print('-'*(3*i+3)+'.|.'*(s)+'-'*(3+i*3))
