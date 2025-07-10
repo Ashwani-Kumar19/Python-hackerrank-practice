@@ -1,0 +1,18 @@
+def print_rangoli(size):
+    lis= ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    for i in range(n-1):
+        if i!=0:
+            print('-'*(n-i-1)*2 + '-'.join(lis[n-1:n-i-1:-1])+'-'+'-'.join(lis[n-i-1:n])+ '-'*(n-i-1)*2 )
+        else:
+            print('-'*2*(n-1)+lis[n-1]+'-'*2*(n-1))
+    for j in range(n-1,-1,-1):
+        if j!=0:
+            print('-'*(n-j-1)*2 + '-'.join(lis[n-1:n-j-1:-1])+'-'+'-'.join(lis[n-j-1:n])+ '-'*(n-j-1)*2)
+        else:
+            print('-'*2*(n-1)+lis[n-1]+'-'*2*(n-1))        
+        
+    
+
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
