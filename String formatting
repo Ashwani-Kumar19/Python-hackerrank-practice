@@ -1,0 +1,10 @@
+def print_formatted(number):
+    Width = len(str(bin(number))[2:])
+    for i in range(1, n+1):
+        a=hex(i)[2:].title()
+        print(str(i).rjust(Width, " "), oct(i)[2:].rjust(Width, " "), str(a).rjust(Width, " "), bin(i)[2:].rjust(Width, " "))
+    
+
+if __name__ == '__main__':
+    n = int(input())
+    print_formatted(n)
