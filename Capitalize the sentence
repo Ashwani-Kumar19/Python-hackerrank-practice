@@ -1,0 +1,16 @@
+def solve(s):
+    lst= s.split(" ")
+    capitalized_1st_letter = [element.capitalize() for element in lst]
+    capitalized_letter = (" ".join(capitalized_1st_letter))
+    return capitalized_letter 
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = solve(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
